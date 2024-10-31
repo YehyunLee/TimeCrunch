@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>TimeCrunch</title>
+    <style>
+        /* Add some basic styling */
+        #app {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .task {
+            margin-bottom: 10px;
+        }
+        .timer {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: red;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <h1>TimeCrunch</h1>
+    <div>
+        <input type="text" id="taskName" placeholder="Task Name"/>
+        <input type="text" id="taskDescription" placeholder="Task Description"/>
+        <input type="datetime-local" id="taskTargetTime"/>
+        <button onclick="addTask()">Add Task</button>
+    </div>
+    <div id="tasks"></div>
+</div>
+<script src="./src/main.js" type="module"></script>
+</body>
+</html>
